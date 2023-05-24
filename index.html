@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body {
-  background-color: lightgreen;
+* {
+  box-sizing: border-box;
 }
 
-@media only screen and (orientation: landscape) {
-  body {
-    background-color: lightblue;
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
 </style>
-</head>
 <body>
 
-<p>Resize the browser window. When the width of this document is larger than the height, the background color is "lightblue", otherwise it is "lightgreen".</p>
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://wallpapers.com/images/featured/cipxrabgpci91ils.jpg" style="width:100%">
+    <img src="https://watermark.lovepik.com/photo/40120/6150.jpg_wh1200.jpg" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBI9mafM5KCBxjlCcHmln95Ss4s79vZOx-WQ&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkZGeaov1btgTdnnTbN9RFWW8u7SCyHZk8Q&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZD1p97b3WbZ7AcNYrEqQrtIAFRGhbBrsSlw&usqp=CAU" style="width:100%">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/bugatti-chiron-sport-mid-engined-w16-engine-exclusive-news-photo-1600704674.jpg" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQ-mBHHn9g7hTL7xRct0iLUUrhmgrE9cvxQ&usqp=CAU" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZD1p97b3WbZ7AcNYrEqQrtIAFRGhbBrsSlw&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkZGeaov1btgTdnnTbN9RFWW8u7SCyHZk8Q&usqp=CAU" style="width:100%">
+    <img src="https://wallpapers.com/images/featured/cipxrabgpci91ils.jpg" style="width:100%">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/bugatti-chiron-sport-mid-engined-w16-engine-exclusive-news-photo-1600704674.jpg" style="width:100%">
+    <img src="https://watermark.lovepik.com/photo/40120/6150.jpg_wh1200.jpg" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQ-mBHHn9g7hTL7xRct0iLUUrhmgrE9cvxQ&usqp=CAU" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="https://watermark.lovepik.com/photo/40120/6150.jpg_wh1200.jpg" style="width:100%">
+    <img src="https://watermark.lovepik.com/photo/40120/6150.jpg_wh1200.jpg" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBI9mafM5KCBxjlCcHmln95Ss4s79vZOx-WQ&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkZGeaov1btgTdnnTbN9RFWW8u7SCyHZk8Q&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZD1p97b3WbZ7AcNYrEqQrtIAFRGhbBrsSlw&usqp=CAU" style="width:100%">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/bugatti-chiron-sport-mid-engined-w16-engine-exclusive-news-photo-1600704674.jpg" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQ-mBHHn9g7hTL7xRct0iLUUrhmgrE9cvxQ&usqp=CAU" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZD1p97b3WbZ7AcNYrEqQrtIAFRGhbBrsSlw&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkZGeaov1btgTdnnTbN9RFWW8u7SCyHZk8Q&usqp=CAU" style="width:100%">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/bugatti-chiron-sport-mid-engined-w16-engine-exclusive-news-photo-1600704674.jpg" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQ-mBHHn9g7hTL7xRct0iLUUrhmgrE9cvxQ&usqp=CAU" style="width:100%">
+    <img src="https://watermark.lovepik.com/photo/40120/6150.jpg_wh1200.jpg" style="width:100%">
+    <img src="https://img.lovepik.com/photo/40123/1521.jpg_wh860.jpg" style="width:100%">
+  </div>
+</div>
 
 </body>
 </html>
